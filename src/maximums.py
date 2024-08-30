@@ -1,17 +1,18 @@
-def max_of_two(x: int, y: int) -> int:
+def max_of_two(x: float, y: float) -> float:
+
     if x >= y:
-        biggest: int = x
+        biggest = x
     else:
-        biggest: int = y
+        biggest = y
     return biggest
 
+def max_of_three(x: float, y: float, z: float) -> float:
 
+    max_value = x 
 
-def max_of_three(x: int, y: int, z: int) -> int:
-    if x >= y and x >= z:
-        biggest: int = x
-    elif y >= z:
-        biggest: int = y
-    else:
-        biggest: int = z
-    return biggest
+    if y > max_value:
+        max_value = y
+    if z > max_value:
+        max_value = z
+
+    return max_value
